@@ -1,6 +1,6 @@
 1. fieldset --> boxes in everything bewtween the fieldset commands
 
-2. dive --> divides bewtween different inputs, here displayed as a box
+2. dive --> creates a division
 
 3. label --> this command seems to bring a name to the division or box 
 
