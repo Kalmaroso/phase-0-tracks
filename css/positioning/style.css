@@ -1,0 +1,22 @@
+#octopus {
+		
+	position: absolute;
+	left: 2cm;
+	top: 2cm;
+	z-index: -2;
+}
+
+#glasses { 
+	display: block;
+	position: relative; 
+	top: 0cm;
+	left: 2.85cm; 
+	z-index: -1;
+	 	 }
+
+#hat {
+	display: block;
+	position: relative; 
+	top: .6cm;
+	left: 1.2cm; 
+}
