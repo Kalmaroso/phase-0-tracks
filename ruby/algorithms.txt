@@ -1,0 +1,88 @@
+ 1. Determine current location of robot (what floor)
+
+ 2. Determine the destination ( floor number)
+
+ 3. determine wether the destination is up or down
+
+ 4. press the according button to call the lift ( up or down)
+
+ 5.  repeat every thirty seconds:
+
+ 		if lift arrives
+
+ 			step forward
+ 		otherwise 
+ 			press button again
+     if lift doesnt appear after 10 loops
+     	use stairs----> end of programm
+ 
+ 6. determine the amount of floors in the building
+
+ 7. determine how many rows and columns the list of floors has
+
+ 8. choose correct button accordingly
+
+ 9. ask the room: Does anyone need me to press another button
+
+ 10. if somone answers with a number 
+ 		press said number
+
+ 	else 
+ 		dont press anything
+
+ 11. 
+ 	repeat until lift moves with 5 seconds in between each time:
+ 		if lift doesnt move
+
+ 			press doors close button
+
+ 	if repeated a 100 times
+ 		---> step out of the elevator and use stairs
+ 		end of programm
+
+ 12. Once lift is moving engage program "small talk about the weather"
+
+13. when lift stops
+		if current floor number is the wanted destination
+			step out of lift
+			---> end program
+
+		elseif stay in the lift and repeat steps 11 and 13, continue on with step 12. 
+
+
+Algorithm to determine wether to get out of bed in the morning:
+
+repeat program every hour until out of bed
+
+	1. wake up
+
+	2. determine date
+
+	3. determine time
+
+	4. determine weekday
+
+	3. if date overlaps with vacation or weekday overlaps with weekends
+		
+			if its earlier than noon 
+				keep sleeping
+
+			else 
+				repeat program in an hour
+			end
+
+		else 
+			if its earlier than 5am 
+				keep sleeping and repeat program in an hour
+			else 
+				wake up 
+			end
+		end
+
+
+
+
+			
+
+
+
