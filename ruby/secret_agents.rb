@@ -8,29 +8,29 @@ max_counter = password.length
 while counter < max_counter 
 
 	letter = password[counter].next
-	puts  "#{letter}"
+	p letter
 	counter+= 1
 end
 
 
 puts "choose password"
-password = gets.chomp
+password_2 = gets.chomp
 
 
-counter = 0
+counter_2 = 0
 
-max_counter = password.length
+max_counter_2 = password_2.length
 
-while counter < max_counter 
+while counter < max_counter_2 
 	alphabet = "abcdefghijklmnopqrstuvwxyz"
-	password_counter = password[counter]
-	number_in_alphabet = alphabet.index("password_counter")
+	password_counter = password_2[counter]
+	number_in_alphabet = alphabet.index(password_counter)
 	number_in_alphabet = number_in_alphabet.to_i
 	alphabet_counter =  number_in_alphabet - 1
 
-	letter = alphabet[alphabet_counter]
+	letter_2 = alphabet[alphabet_counter]
 	
-	puts "#{letter}"
+	p letter_2
 	
-
+counter_2 = counter_2 +1
 end
