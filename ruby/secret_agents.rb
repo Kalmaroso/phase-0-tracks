@@ -17,20 +17,22 @@ puts "choose password"
 password_2 = gets.chomp
 
 
-counter_2 = 0
-
-max_counter_2 = password_2.length
-
-while counter < max_counter_2 
-	alphabet = "abcdefghijklmnopqrstuvwxyz"
-	password_counter = password_2[counter]
-	number_in_alphabet = alphabet.index(password_counter)
-	number_in_alphabet = number_in_alphabet.to_i
-	alphabet_counter =  number_in_alphabet - 1
-
-	letter_2 = alphabet[alphabet_counter]
+#decrypted = ""
+#	alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+	i = 0
+	a = 0
+	puts"what password would you like to decrypt?"
+	string = gets.chomp
+		while i < string.length
+		if string[i] == " "
+		else 
+		placeholder = alphabet.index(string[i])
+		placeholder = placeholder - 1 
+		string[i] = alphabet[placeholder]
+	    end
+	    i = i + 1
+	end
+	puts string
 	
-	p letter_2
 	
-counter_2 = counter_2 +1
-end
