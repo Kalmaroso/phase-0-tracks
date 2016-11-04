@@ -13,6 +13,16 @@ puts "How old are you?"
 age = gets.chomp
 age = age.to_i
 
+puts "What is your birth year?"
+birth_year = gets.chomp
+birth_year = birth_year.to_i
+
+age_according_to_birth_year = 2016 - birth_year
+
+p age_according_to_birth_year
+
+p age
+
 puts "Our company cafeteria serves garlic bread. 
 Should we order some for you? (y/n)"
 garlic = gets.chomp
@@ -57,13 +67,13 @@ health = gets.chomp
 						elsif allergies == "done"
 
 
-									if  ((garlic_bread == true || health_insurance == true ) && age < 100 )
+									if  ((garlic_bread == true || health_insurance == true ) && age == age_according_to_birth_year )
 										puts "Probably not a vampire"
 
-									elsif ( (garlic_bread == false || health_insurance == false ) && age > 100 )
+									elsif ( (garlic_bread == false || health_insurance == false ) && age != age_according_to_birth_year)
 										puts "Probably a vampire"
 
-									elsif (garlic_bread == false &&  health_insurance == false && age   > 100)
+									elsif (garlic_bread == false &&  health_insurance == false && age   != age_according_to_birth_year)
 										puts "Almost certainly a vampire"
 
 									elsif (name == "Drake Cula" || name == "Tu Fang")
