@@ -52,16 +52,23 @@ encoded_name.capitalize!
 
 
 secret_agents_databank[original_name] = encoded_name
-
-p secret_agents_databank
-
-
-
-
+p encoded_name
 
 
 puts "If you are done with this program type <end>."
 input = gets.chomp.downcase.gsub(/\s+/, " ")
 
 
+end
+
+length = secret_agents_databank.size
+counter = 0 
+keys = secret_agents_databank.keys 
+values = secret_agents_databank.values
+
+
+until counter == length
+
+puts "#{keys[counter]} is also known as  #{values[counter]} "
+counter += 1 
 end
