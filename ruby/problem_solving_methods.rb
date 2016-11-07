@@ -1,17 +1,19 @@
-def search_array(arr, number)
-   arr.each do |int|
-        index = 0
-        if int == number
-            p arr.index(number)
-        else 
-            puts " "
-        end
-        index =+ 1
-    end
-end
+#Release 0
+def search_array(arr, num)
+	int = 0
+	while int < arr.length
+		if arr[int] == num
+			puts int
+		end #if
+	int = int + 1
+	end #while
+end #def
 
-arr = [3, 5, 7, 19,54]
-search_array(arr, 7)
+arr = [3, 6, 53, 12, 37]
+p search_array(arr, 12)
+p search_array(arr, 14)
+p search_array(arr, 3)
+p search_array(arr, 6)
 
 
 #Release 1
@@ -31,6 +33,8 @@ fibb(100)
 #if fibb(100).index(101) == 218922995834555169026
 
 #Release 2
+#Sorts an array of letter(only single letters, not longer strings) in alphabetical order.
+#Only works for an array with a finite number of letters.
 def alphabet_sort(array)
     alphabet =  ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", 
     	"p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
