@@ -1,0 +1,7 @@
+SELECT reviews.comment, businesses.name, users.name, users.last_name
+   ...> FROM reviews
+   ...> JOIN businesses ON reviews.business_id = businesses.id
+   ...> JOIN users ON reviews.users_id = users.id;
+Super Döner!|Dietike Bahnhof|Döner|Experte
+Muess so lang warte!|Tschaglis|Kustrim|Kustrim
+Gahn jedi wuche!|Sofra|Matt|Weingarten
