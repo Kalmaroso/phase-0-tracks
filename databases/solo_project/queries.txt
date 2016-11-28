@@ -1,0 +1,47 @@
+The standard JOIN we use joins the two tables with according to a certain condition. Here is the example: 
+
+sqlite> SELECT foods.name, types.name FROM foods JOIN types ON foods.types_id = types.id;
+
+Chicken breasts|Meat
+Eggs|Dairy products
+Ice cream|Desert
+Bread|Starchy food
+Apples|Fruits
+Potatoes|Vegetable
+
+A natural join is the same, but only works if we have the the same column names for the merging parts, which doesnt work for our tables.
+
+CROSS JOINS compare every row of one table with every row of another table, this creates huge lists and can be dangerous.
+Here is what happens when you use it on my tables:
+ SELECT foods.name, types.name FROM foods CROSS JOIN types;
+
+Chicken breasts|Vegetable
+Chicken breasts|Fruits
+Chicken breasts|Meat
+Chicken breasts|Starchy food
+Chicken breasts|Desert
+Chicken breasts|Dairy products
+Eggs|Vegetable
+Eggs|Fruits
+Eggs|Meat
+Eggs|Starchy food
+Eggs|Desert
+Eggs|Dairy products
+Ice cream|Vegetable
+Ice cream|Fruits
+Ice cream|Meat
+Ice cream|Starchy food
+Ice cream|Desert
+Ice cream|Dairy products
+Bread|Vegetable
+Bread|Fruits
+Bread|Meat
+Bread|Starchy food
+Bread|Desert
+Bread|Dairy products
+Apples|Vegetable
+Apples|Fruits
+Apples|Meat
+Apples|Starchy food
+Apples|Desert
+Apples|Dairy products
